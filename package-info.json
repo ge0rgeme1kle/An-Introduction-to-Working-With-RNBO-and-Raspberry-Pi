@@ -4,7 +4,7 @@
 	"version" : "1.0.0",
 	"author" : "George Meikle",
 	"authors" : [  ],
-	"description" : "This package is built around two external objects for generating second-order Markov chains: gtm.markov and gtm.markov~. Markov chains derive the result of the current calculation according to the outcome of those which have preceded it, and have various applications in algorithmic/generative music.",
+	"description" : "Downloadable resources for eponymous video tutorial series.",
 	"tags" : [ "RNBO", "Raspberry Pi", "lesson", "tutorial" ],
 	"website" : "https://linktr.ee/metrosync",
 	"extends" : "",
