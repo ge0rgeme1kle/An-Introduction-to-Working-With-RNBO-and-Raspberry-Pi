@@ -1,0 +1,1 @@
+This package includes downloadable resources for the "An Introduction to Working With RNBO and Raspberry Pi" video tutorial series. To install, place the package folder in the Max Packages folder, accessible via ~/Documents/Max 9/Packages on macOS and %HOMEDRIVE%%HOMEPATH%\Documents\Max 9\Packages on Windows.

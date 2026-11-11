@@ -1,0 +1,36 @@
+{
+	"name" : "An Introduction to Working With RNBO and Raspberry Pi",
+	"displayname" : "",
+	"version" : "1.0.0",
+	"author" : "George Meikle",
+	"authors" : [  ],
+	"description" : "This package is built around two external objects for generating second-order Markov chains: gtm.markov and gtm.markov~. Markov chains derive the result of the current calculation according to the outcome of those which have preceded it, and have various applications in algorithmic/generative music.",
+	"tags" : [ "RNBO", "Raspberry Pi", "lesson", "tutorial" ],
+	"website" : "https://linktr.ee/metrosync",
+	"extends" : "",
+	"extensible" : 0,
+	"max_version_min" : "9.0.0",
+	"max_version_max" : "none",
+	"os" : 	{
+		"macintosh" : 		{
+			"min_version" : "10.15.x",
+			"platform" : [ "x64", "aarch64" ]
+		}
+,
+		"windows" : 		{
+			"min_version" : "10",
+			"platform" : [ "x64" ]
+		}
+
+	}
+,
+	"homepatcher" : "Intro to RNBO and RPi.maxpat",
+	"filelist" : 	{
+		"code" : [ "RNBOPi_LEDSeq.py" ],
+		"extras" : [ "rnbo-rpi.bitseq.maxpat", "rnbo-rpi.polysynth.maxpat" ],
+		"media" : [ "Intro to RNBO and Raspberry Pi Course Outline" ],
+		"other" : [ "RPi LED sequencer circuit.pdf", "rnbo-rpi.polysynth.tosc" ],
+		"patchers" : [ "Intro to RNBO and RPi.maxpat", "gtm.inkey.rnbopat", "gtm.inkey~.rnbopat" ]
+	}
+
+}
