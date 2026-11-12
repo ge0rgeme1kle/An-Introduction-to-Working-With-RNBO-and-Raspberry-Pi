@@ -13,13 +13,172 @@
         "boxes": [
             {
                 "box": {
+                    "fontface": 0,
+                    "fontname": "Arial",
+                    "fontsize": 24.0,
+                    "id": "obj-13",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 308.0, 62.0, 78.0, 33.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 202.40000301599503, 42.0, 78.0, 33.0 ],
+                    "saved_attribute_attributes": {
+                        "bgcolor": {
+                            "expression": "themecolor.theme_clearcolor"
+                        },
+                        "bubble_bgcolor": {
+                            "expression": "themecolor.theme_bubble_bgcolor"
+                        },
+                        "bubble_outlinecolor": {
+                            "expression": "themecolor.theme_bubble_outlinecolor"
+                        },
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
+                    "text": "(2024)"
+                }
+            },
+            {
+                "box": {
+                    "activebgcolor": [ 1.0, 1.0, 1.0, 0.0 ],
+                    "activebgoncolor": [ 1.0, 1.0, 1.0, 0.0 ],
+                    "activetextcolor": [ 0.8, 0.8, 0.8, 1.0 ],
+                    "activetextoncolor": [ 0.8, 0.8, 0.8, 1.0 ],
+                    "bgcolor": [ 1.0, 1.0, 1.0, 0.0 ],
+                    "bgoncolor": [ 1.0, 1.0, 1.0, 0.0 ],
+                    "bordercolor": [ 0.8, 0.8, 0.8, 1.0 ],
+                    "focusbordercolor": [ 0.8, 0.8, 0.8, 1.0 ],
+                    "fontface": 1,
+                    "fontname": "Arial",
+                    "fontsize": 24.0,
+                    "id": "obj-25",
+                    "inactivelcdcolor": [ 1.0, 1.0, 1.0, 0.0 ],
+                    "labeltextcolor": [ 0.8, 0.8, 0.8, 1.0 ],
+                    "lcdbgcolor": [ 1.0, 1.0, 1.0, 0.0 ],
+                    "lcdcolor": [ 1.0, 1.0, 1.0, 0.0 ],
+                    "maxclass": "live.text",
+                    "mode": 0,
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "parameter_enable": 1,
+                    "parameter_mappable": 0,
+                    "patching_rect": [ 125.0, 62.0, 181.0, 33.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 84.80000126361847, 41.19999998807907, 119.40000343322754, 24.5 ],
+                    "saved_attribute_attributes": {
+                        "activebgcolor": {
+                            "expression": "themecolor.theme_clearcolor"
+                        },
+                        "activebgoncolor": {
+                            "expression": "themecolor.theme_clearcolor"
+                        },
+                        "activetextcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        },
+                        "activetextoncolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        },
+                        "bgcolor": {
+                            "expression": "themecolor.theme_clearcolor"
+                        },
+                        "bgoncolor": {
+                            "expression": "themecolor.theme_clearcolor"
+                        },
+                        "bordercolor": {
+                            "expression": "themecolor.theme_bubble_outlinecolor"
+                        },
+                        "focusbordercolor": {
+                            "expression": "themecolor.theme_bubble_outlinecolor"
+                        },
+                        "inactivelcdcolor": {
+                            "expression": "themecolor.theme_clearcolor"
+                        },
+                        "labeltextcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        },
+                        "lcdbgcolor": {
+                            "expression": "themecolor.theme_clearcolor"
+                        },
+                        "lcdcolor": {
+                            "expression": "themecolor.theme_clearcolor"
+                        },
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        },
+                        "textoffcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        },
+                        "valueof": {
+                            "parameter_enum": [ "val1", "val2" ],
+                            "parameter_invisible": 2,
+                            "parameter_longname": "live.text",
+                            "parameter_mmax": 1,
+                            "parameter_modmode": 0,
+                            "parameter_shortname": "live.text",
+                            "parameter_type": 2
+                        }
+                    },
+                    "text": "George Meikle",
+                    "textcolor": [ 0.8, 0.8, 0.8, 1.0 ],
+                    "textoffcolor": [ 0.8, 0.8, 0.8, 1.0 ],
+                    "transition": 1,
+                    "varname": "live.text"
+                }
+            },
+            {
+                "box": {
+                    "hidden": 1,
+                    "id": "obj-23",
+                    "linecount": 2,
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 388.0, 62.0, 252.0, 35.0 ],
+                    "text": ";\rmax launchbrowser https://linktr.ee/metrosync"
+                }
+            },
+            {
+                "box": {
+                    "fontface": 0,
+                    "fontname": "Arial",
+                    "fontsize": 24.0,
+                    "id": "obj-21",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 0.0, 62.0, 306.0, 60.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 0.0, 42.0, 126.0, 60.0 ],
+                    "saved_attribute_attributes": {
+                        "bgcolor": {
+                            "expression": "themecolor.theme_clearcolor"
+                        },
+                        "bubble_bgcolor": {
+                            "expression": "themecolor.theme_bubble_bgcolor"
+                        },
+                        "bubble_outlinecolor": {
+                            "expression": "themecolor.theme_bubble_outlinecolor"
+                        },
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
+                    "text": "Created by\n"
+                }
+            },
+            {
+                "box": {
                     "fontface": 1,
                     "fontsize": 36.0,
                     "id": "obj-14",
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 0.0, 756.0, 310.0, 47.0 ],
+                    "patching_rect": [ 0.0, 764.0, 310.0, 47.0 ],
                     "text": "Tutorial patchers:"
                 }
             },
@@ -31,7 +190,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 0.0, 883.0, 147.0, 22.0 ],
+                    "patching_rect": [ 0.0, 891.0, 147.0, 22.0 ],
                     "text": "rnbo-rpi.polysynth.maxpat"
                 }
             },
@@ -59,7 +218,7 @@
                     "outlettype": [ "", "" ],
                     "parameter_enable": 1,
                     "parameter_mappable": 0,
-                    "patching_rect": [ 0.0, 805.0, 310.0, 37.0 ],
+                    "patching_rect": [ 0.0, 813.0, 310.0, 37.0 ],
                     "saved_attribute_attributes": {
                         "activebgcolor": {
                             "expression": "themecolor.theme_clearcolor"
@@ -128,7 +287,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 0.0, 907.0, 128.0, 22.0 ],
+                    "patching_rect": [ 0.0, 915.0, 128.0, 22.0 ],
                     "text": "rnbo-rpi.bitseq.maxpat"
                 }
             },
@@ -140,7 +299,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 0.0, 942.0, 115.0, 22.0 ],
+                    "patching_rect": [ 0.0, 939.0, 115.0, 22.0 ],
                     "text": "prepend loadunique"
                 }
             },
@@ -168,7 +327,7 @@
                     "outlettype": [ "", "" ],
                     "parameter_enable": 1,
                     "parameter_mappable": 0,
-                    "patching_rect": [ 0.0, 844.0, 310.0, 37.0 ],
+                    "patching_rect": [ 0.0, 852.0, 310.0, 37.0 ],
                     "saved_attribute_attributes": {
                         "activebgcolor": {
                             "expression": "themecolor.theme_clearcolor"
@@ -237,7 +396,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 0.0, 975.0, 51.0, 22.0 ],
+                    "patching_rect": [ 0.0, 963.0, 51.0, 22.0 ],
                     "text": "pcontrol"
                 }
             },
@@ -439,7 +598,7 @@
                         ],
                         "lines": []
                     },
-                    "patching_rect": [ 791.0, 756.0, 78.0, 22.0 ],
+                    "patching_rect": [ 791.0, 764.0, 78.0, 22.0 ],
                     "text": "p useful links"
                 }
             },
@@ -527,7 +686,7 @@
                         ],
                         "lines": []
                     },
-                    "patching_rect": [ 743.0, 825.0, 174.0, 80.0 ],
+                    "patching_rect": [ 743.0, 833.0, 174.0, 80.0 ],
                     "rnboattrcache": {                    },
                     "rnboversion": "1.5.0-dev.148",
                     "saved_attribute_attributes": {
@@ -594,7 +753,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 0.0, 694.0, 1153.0, 60.0 ],
+                    "patching_rect": [ 0.0, 702.0, 1153.0, 60.0 ],
                     "text": "8. Establishing MIDI CC mappings via the Raspberry Pi Web Interface for supplementary parameter control.\n"
                 }
             },
@@ -607,7 +766,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 0.0, 605.0, 1639.0, 87.0 ],
+                    "patching_rect": [ 0.0, 613.0, 1639.0, 87.0 ],
                     "text": "7. Creating a monophonic sequencer driven synthesiser in RNBO and connecting up hardware computing interface components and controllers including buttons, LEDs, and potentiometers for parameter control and feedback.\n"
                 }
             },
@@ -619,7 +778,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 0.0, 543.0, 1588.0, 60.0 ],
+                    "patching_rect": [ 0.0, 551.0, 1588.0, 60.0 ],
                     "text": "6. Processing external audio input sent to a Raspberry Pi running RNBO from other hardware using modules from the RNBO Guitar Pedals package.\n"
                 }
             },
@@ -632,7 +791,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 0.0, 454.0, 1628.0, 87.0 ],
+                    "patching_rect": [ 0.0, 462.0, 1628.0, 87.0 ],
                     "text": "5. Expanding on the polyphonic synthesiser patch using audio effect modules from the RNBO Guitar Pedals package and connecting these up using the Raspberry Pi Web Interface Graph Editor.\n"
                 }
             },
@@ -644,7 +803,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 0.0, 392.0, 594.0, 60.0 ],
+                    "patching_rect": [ 0.0, 400.0, 594.0, 60.0 ],
                     "text": "4. Adding OSC control to parameters using TouchOSC.\n"
                 }
             },
@@ -656,7 +815,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 0.0, 330.0, 1616.0, 60.0 ],
+                    "patching_rect": [ 0.0, 338.0, 1616.0, 60.0 ],
                     "text": "3. Exporting the polyphonic synthesiser to a Raspberry Pi and using MIDI input to play notes and the Raspberry Pi Web Interface to control parameters.\n"
                 }
             },
@@ -668,7 +827,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 0.0, 268.0, 1414.0, 60.0 ],
+                    "patching_rect": [ 0.0, 276.0, 1414.0, 60.0 ],
                     "text": "2. Creating a polyphonic synthesiser in RNBO using modules from the RNBO Synth Building Blocks package and Simple Polyphony.\n"
                 }
             },
@@ -680,7 +839,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 0.0, 206.0, 830.0, 60.0 ],
+                    "patching_rect": [ 0.0, 214.0, 830.0, 60.0 ],
                     "text": "1. Setting up a Raspberry Pi to work with RNBO using the Run-Ready Image.\n"
                 }
             },
@@ -692,7 +851,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 0.0, 116.0, 378.0, 88.0 ],
+                    "patching_rect": [ 0.0, 124.0, 378.0, 88.0 ],
                     "text": "Topics to be covered:\n"
                 }
             },
@@ -704,12 +863,19 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 0.0, 0.0, 1660.0, 114.0 ],
-                    "text": "An Introduction to Working With RNBO and Raspberry Pi\n"
+                    "patching_rect": [ 0.0, 0.0, 1660.0, 60.0 ],
+                    "text": "An Introduction to Working With RNBO and Raspberry Pi"
                 }
             }
         ],
         "lines": [
+            {
+                "patchline": {
+                    "destination": [ "obj-23", 0 ],
+                    "hidden": 1,
+                    "source": [ "obj-25", 0 ]
+                }
+            },
             {
                 "patchline": {
                     "destination": [ "obj-48", 0 ],
@@ -747,6 +913,7 @@
             }
         ],
         "parameters": {
+            "obj-25": [ "live.text", "live.text", 0 ],
             "obj-47": [ "live.text[6]", "live.text", 0 ],
             "obj-64": [ "live.text[1]", "live.text", 0 ],
             "obj-7": [ "rnbo~", "rnbo~", 0 ],
