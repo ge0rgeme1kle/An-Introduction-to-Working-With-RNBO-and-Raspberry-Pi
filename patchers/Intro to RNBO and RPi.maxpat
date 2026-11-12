@@ -13,6 +13,115 @@
         "boxes": [
             {
                 "box": {
+                    "activebgcolor": [ 1.0, 1.0, 1.0, 0.0 ],
+                    "activebgoncolor": [ 1.0, 1.0, 1.0, 0.0 ],
+                    "activetextcolor": [ 0.8, 0.8, 0.8, 1.0 ],
+                    "activetextoncolor": [ 0.8, 0.8, 0.8, 1.0 ],
+                    "bgcolor": [ 1.0, 1.0, 1.0, 0.0 ],
+                    "bgoncolor": [ 1.0, 1.0, 1.0, 0.0 ],
+                    "bordercolor": [ 0.8, 0.8, 0.8, 1.0 ],
+                    "focusbordercolor": [ 0.8, 0.8, 0.8, 1.0 ],
+                    "fontname": "Arial",
+                    "fontsize": 24.0,
+                    "id": "obj-28",
+                    "inactivelcdcolor": [ 1.0, 1.0, 1.0, 0.0 ],
+                    "labeltextcolor": [ 0.8, 0.8, 0.8, 1.0 ],
+                    "lcdbgcolor": [ 1.0, 1.0, 1.0, 0.0 ],
+                    "lcdcolor": [ 1.0, 1.0, 1.0, 0.0 ],
+                    "maxclass": "live.text",
+                    "mode": 0,
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "parameter_enable": 1,
+                    "parameter_mappable": 0,
+                    "patching_rect": [ 1495.0, 852.0, 144.0, 37.0 ],
+                    "saved_attribute_attributes": {
+                        "activebgcolor": {
+                            "expression": "themecolor.theme_clearcolor"
+                        },
+                        "activebgoncolor": {
+                            "expression": "themecolor.theme_clearcolor"
+                        },
+                        "activetextcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        },
+                        "activetextoncolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        },
+                        "bgcolor": {
+                            "expression": "themecolor.theme_clearcolor"
+                        },
+                        "bgoncolor": {
+                            "expression": "themecolor.theme_clearcolor"
+                        },
+                        "bordercolor": {
+                            "expression": "themecolor.theme_bubble_outlinecolor"
+                        },
+                        "focusbordercolor": {
+                            "expression": "themecolor.theme_bubble_outlinecolor"
+                        },
+                        "inactivelcdcolor": {
+                            "expression": "themecolor.theme_clearcolor"
+                        },
+                        "labeltextcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        },
+                        "lcdbgcolor": {
+                            "expression": "themecolor.theme_clearcolor"
+                        },
+                        "lcdcolor": {
+                            "expression": "themecolor.theme_clearcolor"
+                        },
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        },
+                        "textoffcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        },
+                        "valueof": {
+                            "parameter_enum": [ "val1", "val2" ],
+                            "parameter_invisible": 2,
+                            "parameter_longname": "live.text[2]",
+                            "parameter_mmax": 1,
+                            "parameter_modmode": 0,
+                            "parameter_shortname": "live.text",
+                            "parameter_type": 2
+                        }
+                    },
+                    "text": "Useful links",
+                    "textcolor": [ 0.8, 0.8, 0.8, 1.0 ],
+                    "textoffcolor": [ 0.8, 0.8, 0.8, 1.0 ],
+                    "transition": 1,
+                    "varname": "live.text[2]"
+                }
+            },
+            {
+                "box": {
+                    "hidden": 1,
+                    "id": "obj-17",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1495.0, 915.0, 51.0, 22.0 ],
+                    "text": "pcontrol"
+                }
+            },
+            {
+                "box": {
+                    "hidden": 1,
+                    "id": "obj-16",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1495.0, 891.0, 35.0, 22.0 ],
+                    "text": "open"
+                }
+            },
+            {
+                "box": {
                     "fontface": 0,
                     "fontname": "Arial",
                     "fontsize": 24.0,
@@ -20,7 +129,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 308.0, 62.0, 78.0, 33.0 ],
+                    "patching_rect": [ 312.0, 62.0, 78.0, 33.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 202.40000301599503, 42.0, 78.0, 33.0 ],
                     "saved_attribute_attributes": {
@@ -37,7 +146,7 @@
                             "expression": "themecolor.theme_textcolor"
                         }
                     },
-                    "text": "(2024)"
+                    "text": "(2026)"
                 }
             },
             {
@@ -65,7 +174,7 @@
                     "outlettype": [ "", "" ],
                     "parameter_enable": 1,
                     "parameter_mappable": 0,
-                    "patching_rect": [ 125.0, 62.0, 181.0, 33.0 ],
+                    "patching_rect": [ 129.0, 62.0, 181.0, 33.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 84.80000126361847, 41.19999998807907, 119.40000343322754, 24.5 ],
                     "saved_attribute_attributes": {
@@ -137,7 +246,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 388.0, 62.0, 252.0, 35.0 ],
+                    "patching_rect": [ 392.0, 62.0, 252.0, 35.0 ],
                     "text": ";\rmax launchbrowser https://linktr.ee/metrosync"
                 }
             },
@@ -150,7 +259,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 0.0, 62.0, 306.0, 60.0 ],
+                    "patching_rect": [ 0.0, 62.0, 310.0, 60.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 0.0, 42.0, 126.0, 60.0 ],
                     "saved_attribute_attributes": {
@@ -405,7 +514,7 @@
                     "hidden": 1,
                     "id": "obj-32",
                     "maxclass": "newobj",
-                    "numinlets": 0,
+                    "numinlets": 1,
                     "numoutlets": 0,
                     "patcher": {
                         "fileversion": 1,
@@ -419,6 +528,19 @@
                         "classnamespace": "box",
                         "rect": [ 59.0, 119.0, 488.0, 493.0 ],
                         "boxes": [
+                            {
+                                "box": {
+                                    "comment": "",
+                                    "hidden": 1,
+                                    "id": "obj-1",
+                                    "index": 1,
+                                    "maxclass": "inlet",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 257.0, 0.0, 30.0, 30.0 ]
+                                }
+                            },
                             {
                                 "box": {
                                     "id": "obj-6",
@@ -598,7 +720,7 @@
                         ],
                         "lines": []
                     },
-                    "patching_rect": [ 791.0, 764.0, 78.0, 22.0 ],
+                    "patching_rect": [ 1495.0, 939.0, 78.0, 22.0 ],
                     "text": "p useful links"
                 }
             },
@@ -686,7 +808,7 @@
                         ],
                         "lines": []
                     },
-                    "patching_rect": [ 743.0, 833.0, 174.0, 80.0 ],
+                    "patching_rect": [ 743.0, 830.5, 174.0, 80.0 ],
                     "rnboattrcache": {                    },
                     "rnboversion": "1.5.0-dev.148",
                     "saved_attribute_attributes": {
@@ -871,9 +993,30 @@
         "lines": [
             {
                 "patchline": {
+                    "destination": [ "obj-17", 0 ],
+                    "hidden": 1,
+                    "source": [ "obj-16", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-32", 0 ],
+                    "hidden": 1,
+                    "source": [ "obj-17", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-23", 0 ],
                     "hidden": 1,
                     "source": [ "obj-25", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-16", 0 ],
+                    "hidden": 1,
+                    "source": [ "obj-28", 0 ]
                 }
             },
             {
@@ -914,6 +1057,7 @@
         ],
         "parameters": {
             "obj-25": [ "live.text", "live.text", 0 ],
+            "obj-28": [ "live.text[2]", "live.text", 0 ],
             "obj-47": [ "live.text[6]", "live.text", 0 ],
             "obj-64": [ "live.text[1]", "live.text", 0 ],
             "obj-7": [ "rnbo~", "rnbo~", 0 ],
@@ -927,6 +1071,14 @@
             },
             "inherited_shortname": 1
         },
-        "autosave": 0
+        "autosave": 0,
+        "boxgroups": [
+            {
+                "boxes": [ "obj-23", "obj-13", "obj-21", "obj-25" ]
+            },
+            {
+                "boxes": [ "obj-14", "obj-47", "obj-64", "obj-48", "obj-72", "obj-67", "obj-6" ]
+            }
+        ]
     }
 }

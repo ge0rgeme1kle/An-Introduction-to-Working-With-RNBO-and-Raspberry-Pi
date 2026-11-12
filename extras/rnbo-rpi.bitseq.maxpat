@@ -4,13 +4,122 @@
         "appversion": {
             "major": 9,
             "minor": 2,
-            "revision": 1,
+            "revision": 2,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
         "rect": [ 392.0, 310.0, 396.0, 409.0 ],
         "boxes": [
+            {
+                "box": {
+                    "activebgcolor": [ 1.0, 1.0, 1.0, 0.0 ],
+                    "activebgoncolor": [ 1.0, 1.0, 1.0, 0.0 ],
+                    "activetextcolor": [ 0.8, 0.8, 0.8, 1.0 ],
+                    "activetextoncolor": [ 0.8, 0.8, 0.8, 1.0 ],
+                    "bgcolor": [ 1.0, 1.0, 1.0, 0.0 ],
+                    "bgoncolor": [ 1.0, 1.0, 1.0, 0.0 ],
+                    "bordercolor": [ 0.8, 0.8, 0.8, 1.0 ],
+                    "focusbordercolor": [ 0.8, 0.8, 0.8, 1.0 ],
+                    "fontname": "Arial",
+                    "fontsize": 12.0,
+                    "id": "obj-28",
+                    "inactivelcdcolor": [ 1.0, 1.0, 1.0, 0.0 ],
+                    "labeltextcolor": [ 0.8, 0.8, 0.8, 1.0 ],
+                    "lcdbgcolor": [ 1.0, 1.0, 1.0, 0.0 ],
+                    "lcdcolor": [ 1.0, 1.0, 1.0, 0.0 ],
+                    "maxclass": "live.text",
+                    "mode": 0,
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "parameter_enable": 1,
+                    "parameter_mappable": 0,
+                    "patching_rect": [ 206.0, 255.0, 71.0, 20.0 ],
+                    "saved_attribute_attributes": {
+                        "activebgcolor": {
+                            "expression": "themecolor.theme_clearcolor"
+                        },
+                        "activebgoncolor": {
+                            "expression": "themecolor.theme_clearcolor"
+                        },
+                        "activetextcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        },
+                        "activetextoncolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        },
+                        "bgcolor": {
+                            "expression": "themecolor.theme_clearcolor"
+                        },
+                        "bgoncolor": {
+                            "expression": "themecolor.theme_clearcolor"
+                        },
+                        "bordercolor": {
+                            "expression": "themecolor.theme_bubble_outlinecolor"
+                        },
+                        "focusbordercolor": {
+                            "expression": "themecolor.theme_bubble_outlinecolor"
+                        },
+                        "inactivelcdcolor": {
+                            "expression": "themecolor.theme_clearcolor"
+                        },
+                        "labeltextcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        },
+                        "lcdbgcolor": {
+                            "expression": "themecolor.theme_clearcolor"
+                        },
+                        "lcdcolor": {
+                            "expression": "themecolor.theme_clearcolor"
+                        },
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        },
+                        "textoffcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        },
+                        "valueof": {
+                            "parameter_enum": [ "val1", "val2" ],
+                            "parameter_invisible": 2,
+                            "parameter_longname": "live.text[2]",
+                            "parameter_mmax": 1,
+                            "parameter_modmode": 0,
+                            "parameter_shortname": "live.text",
+                            "parameter_type": 2
+                        }
+                    },
+                    "text": "Useful links",
+                    "textcolor": [ 0.8, 0.8, 0.8, 1.0 ],
+                    "textoffcolor": [ 0.8, 0.8, 0.8, 1.0 ],
+                    "transition": 1,
+                    "varname": "live.text[2]"
+                }
+            },
+            {
+                "box": {
+                    "hidden": 1,
+                    "id": "obj-17",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 206.0, 301.0, 51.0, 22.0 ],
+                    "text": "pcontrol"
+                }
+            },
+            {
+                "box": {
+                    "hidden": 1,
+                    "id": "obj-16",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 206.0, 277.0, 35.0, 22.0 ],
+                    "text": "open"
+                }
+            },
             {
                 "box": {
                     "id": "obj-3",
@@ -54,20 +163,33 @@
                     "hidden": 1,
                     "id": "obj-32",
                     "maxclass": "newobj",
-                    "numinlets": 0,
+                    "numinlets": 1,
                     "numoutlets": 0,
                     "patcher": {
                         "fileversion": 1,
                         "appversion": {
                             "major": 9,
                             "minor": 2,
-                            "revision": 1,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
                         "classnamespace": "box",
                         "rect": [ 475.0, 186.0, 633.0, 611.0 ],
                         "boxes": [
+                            {
+                                "box": {
+                                    "comment": "",
+                                    "hidden": 1,
+                                    "id": "obj-1",
+                                    "index": 1,
+                                    "maxclass": "inlet",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 282.0, 0.0, 30.0, 30.0 ]
+                                }
+                            },
                             {
                                 "box": {
                                     "id": "obj-15",
@@ -291,7 +413,7 @@
                         ],
                         "lines": []
                     },
-                    "patching_rect": [ 190.0, 197.0, 78.0, 22.0 ],
+                    "patching_rect": [ 206.0, 325.0, 78.0, 22.0 ],
                     "text": "p useful links"
                 }
             },
@@ -768,7 +890,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 2,
-                            "revision": 1,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -1896,8 +2018,8 @@
                                     "range": [ -0.01, 1.01 ],
                                     "rnbo_classname": "scope~",
                                     "rnbo_extra_attributes": {
-                                        "calccount": 256.0,
-                                        "bufsize": 128.0
+                                        "bufsize": 128.0,
+                                        "calccount": 256.0
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "scope~_obj-30"
@@ -2936,8 +3058,8 @@
                                     "range": [ -0.1, 15.1 ],
                                     "rnbo_classname": "scope~",
                                     "rnbo_extra_attributes": {
-                                        "calccount": 256.0,
-                                        "bufsize": 128.0
+                                        "bufsize": 128.0,
+                                        "calccount": 256.0
                                     },
                                     "rnbo_serial": 2,
                                     "rnbo_uniqueid": "scope~_obj-17"
@@ -3428,8 +3550,8 @@
                                     "range": [ -0.1, 255.1 ],
                                     "rnbo_classname": "scope~",
                                     "rnbo_extra_attributes": {
-                                        "calccount": 256.0,
-                                        "bufsize": 128.0
+                                        "bufsize": 128.0,
+                                        "calccount": 256.0
                                     },
                                     "rnbo_serial": 3,
                                     "rnbo_uniqueid": "scope~_obj-10"
@@ -3532,8 +3654,8 @@
                                     "range": [ -0.01, 1.01 ],
                                     "rnbo_classname": "scope~",
                                     "rnbo_extra_attributes": {
-                                        "calccount": 256.0,
-                                        "bufsize": 128.0
+                                        "bufsize": 128.0,
+                                        "calccount": 256.0
                                     },
                                     "rnbo_serial": 4,
                                     "rnbo_uniqueid": "scope~_obj-12"
@@ -3810,7 +3932,7 @@
                                             "appversion": {
                                                 "major": 9,
                                                 "minor": 2,
-                                                "revision": 1,
+                                                "revision": 2,
                                                 "architecture": "x64",
                                                 "modernui": 1
                                             },
@@ -3823,9 +3945,9 @@
                                                         "text": "This shift register sequencer is based on shift-register-integer.maxpat, which is included in the package of resources supplied with Generating Sound and Organizing Time (GO) Book 1 by Graham Wakefield and Gregory Taylor and detailed in Chapter 5: Stepping in Time and Space (pp. 136–139). This shift register sequencer also makes use of the go.ramp2trig, go.bit.rotate, and go.wrap abstractions from the GO package. These materials are distributed by the publisher Cycling '74 under a CC BY 4.0 licence. A link to the licence is supplied in the useful links subpatcher in the rnbo-rpi.bitseq.maxpat root patcher.",
                                                         "linecount": 8,
                                                         "patching_rect": [ 482.0, 24.0, 437.0, 114.0 ],
-                                                        "numinlets": 1,
+                                                        "numoutlets": 0,
                                                         "id": "obj-11",
-                                                        "numoutlets": 0
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -3834,9 +3956,9 @@
                                                         "text": "7. go.bit.wrap reduces the bit depth of the 8-bit shift register sequence and, as a result, reduces the number of possible integer values the sequence can reproduce. This is necessary because a bit depth of 8 bits (7 on a 0–7 bit depth scale) reproduces values from 0–255 (2 ^ 8 = 256), which is twice the MIDI note number range. A bit depth of 7 bits reproduces values from 0-127 (2 ^ 7 = 128), which covers the entire MIDI note number range but is still likely too large for melodic applications. Reducing the bit depth instead to either 3 or 4 bits gives value ranges of 0–7 (2 ^ 3 = 8) and 0-15 (2 ^ 4 = 16), respectively, which covers either one or two octaves of a diatonic scale. Bit reduction is carried out simply by wrapping the integer representation of the sequence within the maximum range the defined bit depth can reproduce. Excess bits (those trimmed away) can also be extracted by subtracting the wrapped (bit reduced) integer from the original 8-bit integer. ",
                                                         "linecount": 6,
                                                         "patching_rect": [ 943.0, 1499.0, 973.0, 87.0 ],
-                                                        "numinlets": 1,
+                                                        "numoutlets": 0,
                                                         "id": "obj-26",
-                                                        "numoutlets": 0
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -3844,10 +3966,10 @@
                                                         "maxclass": "comment",
                                                         "text": "7.",
                                                         "patching_rect": [ 418.33333855867386, 437.1666798591614, 29.0, 33.0 ],
-                                                        "numinlets": 1,
-                                                        "id": "obj-17",
                                                         "numoutlets": 0,
-                                                        "fontsize": 24.0
+                                                        "fontsize": 24.0,
+                                                        "id": "obj-17",
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -3855,10 +3977,10 @@
                                                         "maxclass": "comment",
                                                         "text": "8.",
                                                         "patching_rect": [ 662.0000174045563, 227.83334028720856, 29.0, 33.0 ],
-                                                        "numinlets": 1,
-                                                        "id": "obj-16",
                                                         "numoutlets": 0,
-                                                        "fontsize": 24.0
+                                                        "fontsize": 24.0,
+                                                        "id": "obj-16",
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -3867,9 +3989,9 @@
                                                         "text": "8. go.ramp2trig generates single sample clock triggers on phase reset of an incoming phasor but is more versatile than the delta —> < operation typically used for this purpose. Rather than simply tracking the magnitude of the delta between the current and previous samples and generating triggers from a substantial change to that value, go.ramp2trig tracks the rate of proportional change between the current and previous samples. This calculation is carried out by dividing the difference between the current and previous samples (current - previous) by their sum and then converting the result to an absolute value so that proportional changes can be tracked either when increasing or decreasing. For example, if the current sample has a value of 1 and the previous sample has a value of 0.75, the difference (1 - 0.75 = 0.25) divided by the sum (1 + 0.75 = 1.75) = 0.25 / 1.75 = 0.1429. Similarly, if the incoming signal is moving in the opposite direction and the current and previous sample values are swapped, the difference (0.75 - 1 = -0.25) divided by the sum (1.75) = -0.25 / 1.75 = -0.1429, the absolute value of which is the same as the result of the previous calculation (0.1429). The resulting absolute proportional rate of change is then compared against a threshold value (> 0.5), so that only very rapid changes in incoming signal value are converted to triggers, such as the phase reset of either an upward or downward phasor ramp signal, the peaks and troughs of a triangle wave, or the forced reset of a phasor if its cycle is paused and restarted again from 0 (or 1 for downward ramps). Triggers outputted by the > 0.5 comparator operator are subsequently passed through a series of change and > 0 comparator operators. The change operator returns the sign of the difference between the current and previous samples (+1 for value increases, -1 for value decreases, and 0 for unchanging values). This means that only transitions from 0–1 on the onset of triggers outputted by > 0.5 will result in an output value of 1 from the change operator, which in turn triggers a single sample impulse of 1 from > 0. This operation serves to mitigate the risk of double triggers that could otherwise occur when go.ramp2trig's input signal itself contains single sample triggers. Without this final operation, a single sample impulse trigger input would otherwise cause a double trigger on output due to the fact that the absolute rate of proportional change from 0–1 and 1–0, on both the onset and offset of the impulse trigger = 1, which exceeds the > 0.5 comparator threshold: (1 - 0) / (1 + 0) = 1; (0 - 1) / (0 + 1) = -1 (abs 1).",
                                                         "linecount": 15,
                                                         "patching_rect": [ 943.0, 1588.0, 973.0, 208.0 ],
-                                                        "numinlets": 1,
+                                                        "numoutlets": 0,
                                                         "id": "obj-15",
-                                                        "numoutlets": 0
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -3878,9 +4000,9 @@
                                                         "text": "6. Bit rotation can be applied when chance = 0 and the sequence is looping. This effect is most audible when heard within the context of accompanying sequences (or a metronome). Bit rotation (in either direction) works by combining both a left shift and a right shift. The first shift moves in the desired rotation direction by the desired number of bits (N), but is applied to the number of bits that remain (M) when subtracting the number of bits to rotate (N) from the total bit depth/length of the sequence (L). The bits to which the first shift is applied include the first bit and its successive bits (those to its right). The second shift moves in the opposite direction to the first shift by M bits and is applied to N bits. The bits to which the second shift is applied include the last bit and its preceding bits (those to its left). The result is that the two segments of the bit sequence cross over each other to occupy the space vacated by the other segment of bits, which is the same as retaining the original bit values of each bit in the sequence but cycling them round the bits/stages of the sequence in the desired direction by the desired number of bits (i.e., bits shifted off the end of the sequence wrap round to the beginning and vice versa). For example, to rotate an 8-bit (L) sequence by 3 (N) bits to the right, the first 5 (M) bits are shifted by 3 (N) bits to the right and the last 3 (N) bits are shifted 5 (M) bits to the left. Conversely, to rotate an 8-bit (L) sequence by 3 (N) bits to the left, the first 5 (M) bits are shifted by 3 (N) bits to the left and the last 3 (N) bits are shifted by 5 (M) bits to the right. Assigning the letters of the alphabet to the bits in the sequence can make this easier to visualise. Positive and negative values for the number of bits by which to rotate the sequence (N) result in clockwise (right) and anticlockwise (left) rotations, respectively. \n\n+3 (clockwise) rotation: [a b c d e] [f g h] —> [f g h] [a b c d e]\n- 3 (anticlockwise) rotation: [a b c d e] [f g h] —> d e] [f g h] [a b c\n\nThe right shift is executed by multiplying the integer representation of the bit sequence by 2 ^ N and wrapping the result within the maximum integer value that can be reproduced by the bit depth/length of the sequence (2 ^ L). For example, if L = 8, the integer multiplication will be wrapped within an upper limit of 2 ^ 8 = 256. The wrap effectively trims off any excess bits that are shifted beyond the end of the sequence.\n\nThe left shift is executed by multiplying the integer representation of the bit sequence by 2 ^ -M, which is the same as dividing by 2 ^ M. Because this calculation is apt to equal a fractional value and bitwise operations deal solely with integers, the result is truncated by the floor operator. \n\nOnce the complimentary right and left shifts have been completed, the resulting integer values are summed together to give the final result of the bit rotation in its integer representation. \n\nFor example, the 8-bit sequence 0 1 1 0 1 0 1 0 = 86, when the leftmost bit = bit 0 and the rightmost bit = bit 7. Rotating the bit sequence by +3 (clockwise) = 0 1 0 0 1 1 0 1 = 178. Right shift = 86 * 2 ^ 3 = 86 * 8 = 688. 688 wrap (%) 2 ^ 8 = 688 wrap (%) 256 = 176. Left shift = 86 * 2 ^ -5 = 86 / 2 ^ 5 = 86 / 32 = 2.6875 . 2.6875 floor (truncated) = 2. 176 + 2 = 178.\n\nRotating the same bit sequence by -3 (anticlockwise) = 0 1 0 1 0 0 1 1 = 202. Because N is wrapped between 0 and L, the roles of N and M are swapped between the right and left shifts for an anticlockwise rotation, with the right shift multiplying the integer representation of the bit sequence by 2 ^ M and the left shit multiplying the integer representation of the bit sequence 2 ^ -N. -3 wrap (%) 8 = 5. Right shift therefore = 86 * 2 ^ 5 = 86 * 32 = 2,752. 2,752 wrap (%) 2 ^ 8 = 2,752 wrap (%) 256 = 192. Left shift = 86 * 2 ^ -3 = 86 / 2 ^ 3 = 86 / 8 = 10.75. 10.75 floor (truncated) = 10. 192 + 10 = 202.",
                                                         "linecount": 33,
                                                         "patching_rect": [ 943.0, 1048.0, 973.0, 449.0 ],
-                                                        "numinlets": 1,
+                                                        "numoutlets": 0,
                                                         "id": "obj-13",
-                                                        "numoutlets": 0
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -3888,10 +4010,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "go.bit.wrap",
                                                         "patching_rect": [ 349.33333855867386, 442.6666798591614, 67.0, 22.0 ],
-                                                        "numinlets": 2,
-                                                        "id": "obj-8",
                                                         "numoutlets": 2,
-                                                        "outlettype": [ "", "" ]
+                                                        "outlettype": [ "", "" ],
+                                                        "id": "obj-8",
+                                                        "numinlets": 2
                                                     }
                                                 },
                                                 {
@@ -3899,10 +4021,10 @@
                                                         "maxclass": "comment",
                                                         "text": "6.",
                                                         "patching_rect": [ 291.33334201574326, 368.00001096725464, 29.0, 33.0 ],
-                                                        "numinlets": 1,
-                                                        "id": "obj-10",
                                                         "numoutlets": 0,
-                                                        "fontsize": 24.0
+                                                        "fontsize": 24.0,
+                                                        "id": "obj-10",
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -3910,10 +4032,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "go.bit.rotate",
                                                         "patching_rect": [ 217.3333398103714, 373.3333444595337, 72.0, 22.0 ],
-                                                        "numinlets": 3,
-                                                        "id": "obj-1",
                                                         "numoutlets": 1,
-                                                        "outlettype": [ "" ]
+                                                        "outlettype": [ "" ],
+                                                        "id": "obj-1",
+                                                        "numinlets": 3
                                                     }
                                                 },
                                                 {
@@ -3921,10 +4043,10 @@
                                                         "maxclass": "comment",
                                                         "text": "5.",
                                                         "patching_rect": [ 435.3333463072777, 17.33333384990692, 29.0, 33.0 ],
-                                                        "numinlets": 1,
-                                                        "id": "obj-82",
                                                         "numoutlets": 0,
-                                                        "fontsize": 24.0
+                                                        "fontsize": 24.0,
+                                                        "id": "obj-82",
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -3933,9 +4055,9 @@
                                                         "text": "5. The chance parameter (0–1), which sets the < argument through which the absolute random noise signal is passed as a means of generating the random 0–1 gate values that represent individual bits being fed into the shift register on each clock trigger, is capable of determining a number of different sequence behaviours in combination with the xor comparator operator. When chance = 0, all random gate values will also = 0 as the absolute noise value cannot be < 0. This results in the same sequence of 8 (for an 8-bit/stage shift register/sequence) integer representations of the sequence state for each successive clock trigger looping perpetually round the shift register. When chance = 1, all random gate values will also = 1, as the absolute noise value is always < 1. This results in the same sequence of 8 (for an 8-bit/stage shift register/sequence) integer representations of the sequence state for each successive clock trigger looping and inverting repeatedly so that the looping sequence becomes twice as long (16 stages), playing once in its original form and once in an inverted form for each cycle of the loop. This is due to the fact that a final bit value of 1 in the shift register/sequence, which becomes apparent when the final bit value moves one bit/stage beyond the maximum bit depth/length of the shift register/sequence and the integer representation of the current sequence state exceeds the maximum integer value the sequence bit depth/length can reproduce (>= integer limit; see 2.), results in the xor comparator operator outputting a 0 and pushing it into the first bit/stage of the shift register/sequence in place of the 1 in the final bit/stage, as the gate signal arriving at the left inlet of the xor operator will also always = 1 when the chance threshold = 1.\n\nConversely, a final bit value of 0 will result in a 0 from the >= operator being sent into the right inlet of the xor operator, thus causing the xor operator to output a 1 and push it into the first bit/stage of the shift register/sequencer in place of the 0 in the final bit, as the gate signal arriving at the left inlet of the xor operator will always = 1. A chance value of 0.5 results in a continuously random output of 0 and 1 gate values being fed into the shift register on each clock trigger and therefore a random sequence of values that doesn't repeat itself or invert. It should be noted that final bit values of 1 will still occasionally wrap around and be pushed into the first bit/stage of the shift register/sequencer in place of an incoming absolute random noise gate value of 0, due to the functionality of the xor comparator operator in the circuit. This results in a prevalence of downward and upward sequences of values in the random output of the shift register/sequencer when chance = 0.5, rather than an even random probability distribution (which is nevertheless outputted by the noise operator used as the source of the incoming random gate values). When chance is between 0 and 0.5, the sequence mostly loops with occasional random deviations. When chance is between 0.5 and 1, the sequence mostly inverts with occasional random deviations.",
                                                         "linecount": 19,
                                                         "patching_rect": [ 943.0, 785.0, 973.0, 261.0 ],
-                                                        "numinlets": 1,
+                                                        "numoutlets": 0,
                                                         "id": "obj-81",
-                                                        "numoutlets": 0
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -3944,9 +4066,9 @@
                                                         "text": "Decoding the integer into its binary representation produces a series of 0s and 1s, each of which is effectively passed down a chain of 2x multipliers at every clock trigger. This is called a shift register. The results of these multiplications are then summed together to create a signal output value that is unique to each step of the sequence. For example, if the input signal on the first clock trigger is 0, then 0 x 1 = 0, which is the final output value with only one step/trigger. If the input signal on the second clock trigger is 1, then (1 x 1) + (0 x 2) = 1. If the input signal on the third clock trigger is also 1, then (1 x 1) + (1 x 2) + (0 x 4) = 3. If the input signal on the fourth clock trigger is again 1, then (1 x 1) + (1 x 2) + (1 x 4) + (0 x 8) = 7.\n\nIf the shift register/sequence length is capped at 4 bits/stages, then looping this series of binary bit values through the shift register produces a looping sequence of values. On the next clock trigger, the calculation would be (0 x 1) + (1 x 2) + (1 x 4) + (1 x 8) = 14. The next clock trigger = (1 x 1) + (0 x 2) + (1 x 4) + (1 x 8) = 13. Next clock trigger = (1 x 1) + (1 x 2) + (0 x 4) + (1 x 8) = 11. The next clock trigger would then have the same output value as the initial trigger in which each stage of the shift register contained a bit value (the fourth trigger overall): (1 x 1) + (1 x 2) + (1 x 4) + (0 x 8) = 7. The looping sequence of values is therefore 7, 14, 13, 11. Conversely, if the sequence does not loop and a new, random 0 or 1 is passed into the first stage of the shift register at each clock trigger, the result will be a continually evolving random sequence of values. A 4-bit/stage shift register/sequence can produce 16 (2 ^ 4) possible values (0–15).\n\nRemember: shift register sequencers don’t work like traditional sequencers. When looping round a repeating sequence in a shift register sequencer, a play head isn’t moving through a static series of values for each step. Rather, the bit values (0s and 1s) for each stage of the shift register are themselves cycling through the individual bits of the shift register, each of which is successively multiplied by 2 (1x, 2x, 4x, 8x, 16x, 32x, 64x, 128x for an 8-bit/stage shift register). It is the summation of the integers resulting from the bit calculations applied to the individuals bits (0s and 1s) of each stage of the shift register on every clock trigger that provides the output value of the sequencer at any given point in its loop. As the repeating pattern of 0s and 1s moves cyclically through the shift register, the sum total of their individual calculations changes and so the output value changes. A bit depth/shift register sequencer length of 8 bits can reproduce 256 individual values (0–255); 0 when all 8 bits = 0 and 255 when all 8 bits = 1.",
                                                         "linecount": 19,
                                                         "patching_rect": [ 943.0, 522.0, 973.0, 261.0 ],
-                                                        "numinlets": 1,
+                                                        "numoutlets": 0,
                                                         "id": "obj-79",
-                                                        "numoutlets": 0
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -3954,10 +4076,10 @@
                                                         "maxclass": "comment",
                                                         "text": "4.",
                                                         "patching_rect": [ 146.66667103767395, 298.00000888109207, 29.0, 33.0 ],
-                                                        "numinlets": 1,
-                                                        "id": "obj-77",
                                                         "numoutlets": 0,
-                                                        "fontsize": 24.0
+                                                        "fontsize": 24.0,
+                                                        "id": "obj-77",
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -3966,9 +4088,9 @@
                                                         "text": "4. The newly updated integer value is then sampled on each clock trigger by the latch operator and stored in the history operator before being multiplied by 2 in anticipation for the next clock trigger. As the number of integer values a given bit depth/sequence length can represent doubles with each successive bit (number of possible values = 2 ^ bit depth), the stored integer must also be multiplied by 2 on every clock trigger.",
                                                         "linecount": 3,
                                                         "patching_rect": [ 943.0, 473.0, 973.0, 47.0 ],
-                                                        "numinlets": 1,
+                                                        "numoutlets": 0,
                                                         "id": "obj-76",
-                                                        "numoutlets": 0
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -3977,9 +4099,9 @@
                                                         "text": "3b. The integer representation of the shift register/sequence state is constrained within the maximum integer value its bit depth (length) can reproduce by the mod operator, the divisor argument for which is determined by the total number of values the shift register/sequence bit depth can reproduce (maximum integer value + 1). This value is determined by raising the number of bits/stages in the sift register/sequence by a power of 2 (exp2). For example, an 8-bit/stage shift register/sequence can represent 256 integer values (0–255), which is calculated as 2 ^ 8 = 256. ",
                                                         "linecount": 4,
                                                         "patching_rect": [ 943.0, 411.0, 973.0, 60.0 ],
-                                                        "numinlets": 1,
+                                                        "numoutlets": 0,
                                                         "id": "obj-73",
-                                                        "numoutlets": 0
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -3987,10 +4109,10 @@
                                                         "maxclass": "comment",
                                                         "text": "3b.",
                                                         "patching_rect": [ 262.66667449474335, 228.0000067949295, 42.0, 33.0 ],
-                                                        "numinlets": 1,
-                                                        "id": "obj-68",
                                                         "numoutlets": 0,
-                                                        "fontsize": 24.0
+                                                        "fontsize": 24.0,
+                                                        "id": "obj-68",
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -3998,10 +4120,10 @@
                                                         "maxclass": "comment",
                                                         "text": "3a.",
                                                         "patching_rect": [ 133.33333730697632, 263.33334118127823, 42.0, 33.0 ],
-                                                        "numinlets": 1,
-                                                        "id": "obj-54",
                                                         "numoutlets": 0,
-                                                        "fontsize": 24.0
+                                                        "fontsize": 24.0,
+                                                        "id": "obj-54",
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -4009,10 +4131,10 @@
                                                         "maxclass": "comment",
                                                         "text": "2.",
                                                         "patching_rect": [ 146.66667103767395, 228.0000067949295, 29.0, 33.0 ],
-                                                        "numinlets": 1,
-                                                        "id": "obj-52",
                                                         "numoutlets": 0,
-                                                        "fontsize": 24.0
+                                                        "fontsize": 24.0,
+                                                        "id": "obj-52",
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -4021,9 +4143,9 @@
                                                         "text": "3a. The current value of the gate signal (either 0 or 1) being outputted from the xor operator is equivalent to a single binary bit that represents one stage in the binary shift register. This bit value is summed together with the current integer representation of the binary shit register (sequence) state.",
                                                         "linecount": 2,
                                                         "patching_rect": [ 943.0, 376.0, 973.0, 33.0 ],
-                                                        "numinlets": 1,
+                                                        "numoutlets": 0,
                                                         "id": "obj-51",
-                                                        "numoutlets": 0
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -4032,9 +4154,9 @@
                                                         "text": "2. The random gate signal and a gate signal representative of the final bit value currently stored in the shift register/sequence at the time of the latest clock trigger are passed into the xor comparator operator, which outputs a 1 if only one of its inputs is non-zero. \n\nThe final bit value in the shift register/sequence (either 0 or 1) is determined by comparing the stored integer representation of the current sequence state against the maximum value that can be reproduced by the current bit depth (shift register length in stages) of the sequence (>= integer limit). If the final bit value = 1, when that bit moves one stage beyond the maximum bit depth/length of the shift register/sequence on the latest clock trigger, its contribution to the overall integer representation of the sequence state will cause the stored integer to exceed the maximum value that can be reproduced by the current bit depth of the shift register/sequence. For example, a shift register/sequence with a bit depth/length of 8 bits can reproduce 256 integer values (0–255). Each successive bit in a shift register contributes twice the weight of the preceding bit to the overall integer value of the shift register. For example, the individual 0s and 1s attributed to each of the 8 bits in an 8-bit shift register are multiplied by 1x, 2x, 4x, 8x, 16x, 32x, 64x, and 128x, respectively. A 9th bit would therefore multiply the 0/1 bit value attributed to it by 256x. A final bit value of 1 in an 8-bit shift register/sequence would therefore contribute 256 to the overall integer representation of the shift register/sequence when moving one stage beyond the bit-depth limit of the shift register/sequence, thus resulting in >= integer limit returning a 1. A final bit value of 0 would contribute 0 to the overall integer representation of the shift register/sequence when moving one stage beyond the bit-depth limit of the shift register/sequence, thus resulting in >= integer limit returning a 0 (even if all 8 bits of the shift register/sequence contained bit values of 1, which together would total an integer value of 255). \n\nProviding the integer representation of the current sequence state is < the maximum value that can be reproduced by the current bit depth (length) of the sequence (i.e., the last bit value in the shift register/sequence = 0), the random gate signal values derived from the absolute random noise signal (0s and 1s) are passed out of the xor operator. If the integer representation of the current sequence state exceeds the maximum value that can be reproduced by the current bit depth (length) of the shift register/sequence (i.e., the last bit in the shift register = 1 and the sequence moves one step beyond the maximum length of the shift register on the latest clock trigger), the gate signal representing this comparison (>= integer limit) will = 1 and will be passed through the xor comparator operator providing the current random gate signal value = 0. This causes the bit value of 1 from the last bit of the shift register to be wrapped round and fed back into the first bit of the shift register. If the current random gate value also = 1, then a 0 will instead be outputted from xor and pushed into the first stage of the shift register/sequence (the final/incoming bit value is flipped before being pushed into the first stage of the shift register/sequence). This ensures that a chance threshold of 0 results in a looping sequence, due to the fact that gate signal derived from the random absolute noise input will always = 0 and the final bit value of the shift register/sequence (whether 0 or 1) will always be wrapped back around and pushed back into the first stage of the shift register/sequence after moving beyond the last stage of the shift register/sequence. Chance threshold values between 0 and 0.5 also prioritise looping, with progressively more randomness as chance approaches 0.5.",
                                                         "linecount": 24,
                                                         "patching_rect": [ 943.0, 46.0, 973.0, 328.0 ],
-                                                        "numinlets": 1,
+                                                        "numoutlets": 0,
                                                         "id": "obj-36",
-                                                        "numoutlets": 0
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -4042,9 +4164,9 @@
                                                         "maxclass": "comment",
                                                         "text": "1. Gates (0–1) of indeterminate length are generated whenever an absolute random noise value (0–1) exceeds a chance threshold (0–1). ",
                                                         "patching_rect": [ 943.0, 24.0, 973.0, 20.0 ],
-                                                        "numinlets": 1,
+                                                        "numoutlets": 0,
                                                         "id": "obj-21",
-                                                        "numoutlets": 0
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -4052,10 +4174,10 @@
                                                         "maxclass": "comment",
                                                         "text": "1.",
                                                         "patching_rect": [ 146.66667103767395, 87.33333593606949, 29.0, 33.0 ],
-                                                        "numinlets": 1,
-                                                        "id": "obj-27",
                                                         "numoutlets": 0,
-                                                        "fontsize": 24.0
+                                                        "fontsize": 24.0,
+                                                        "id": "obj-27",
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -4063,10 +4185,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "in 1 @comment \"clock phasor\"",
                                                         "patching_rect": [ 584.0000174045563, 199.3333392739296, 172.0, 22.0 ],
-                                                        "numinlets": 0,
-                                                        "id": "obj-3",
                                                         "numoutlets": 1,
-                                                        "outlettype": [ "" ]
+                                                        "outlettype": [ "" ],
+                                                        "id": "obj-3",
+                                                        "numinlets": 0
                                                     }
                                                 },
                                                 {
@@ -4074,9 +4196,9 @@
                                                         "maxclass": "newobj",
                                                         "text": "out 2 seq_8-bit",
                                                         "patching_rect": [ 259.33333855867386, 479.0000128149986, 88.0, 22.0 ],
-                                                        "numinlets": 1,
+                                                        "numoutlets": 0,
                                                         "id": "obj-2",
-                                                        "numoutlets": 0
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -4084,10 +4206,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "param bit_depth 5 @min 0 @max 7",
                                                         "patching_rect": [ 397.33333855867386, 373.50001096725464, 198.0, 22.0 ],
-                                                        "numinlets": 0,
-                                                        "id": "obj-4",
                                                         "numoutlets": 1,
-                                                        "outlettype": [ "" ]
+                                                        "outlettype": [ "" ],
+                                                        "id": "obj-4",
+                                                        "numinlets": 0
                                                     }
                                                 },
                                                 {
@@ -4095,10 +4217,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "int",
                                                         "patching_rect": [ 398.0000118613243, 303.3333423733711, 21.0, 22.0 ],
-                                                        "numinlets": 1,
-                                                        "id": "obj-75",
                                                         "numoutlets": 1,
-                                                        "outlettype": [ "" ]
+                                                        "outlettype": [ "" ],
+                                                        "id": "obj-75",
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -4106,10 +4228,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "clip -length+1 length-1",
                                                         "patching_rect": [ 398.0000118613243, 268.6666746735573, 127.0, 22.0 ],
-                                                        "numinlets": 1,
-                                                        "id": "obj-71",
                                                         "numoutlets": 1,
-                                                        "outlettype": [ "" ]
+                                                        "outlettype": [ "" ],
+                                                        "id": "obj-71",
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -4117,10 +4239,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "param rotate 0 @min -7 @max 7",
                                                         "patching_rect": [ 398.0000118613243, 233.33334028720856, 184.0, 22.0 ],
-                                                        "numinlets": 0,
-                                                        "id": "obj-70",
                                                         "numoutlets": 1,
-                                                        "outlettype": [ "" ]
+                                                        "outlettype": [ "" ],
+                                                        "id": "obj-70",
+                                                        "numinlets": 0
                                                     }
                                                 },
                                                 {
@@ -4128,10 +4250,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "latch",
                                                         "patching_rect": [ 398.0000118613243, 338.66667675971985, 34.0, 22.0 ],
-                                                        "numinlets": 2,
-                                                        "id": "obj-69",
                                                         "numoutlets": 1,
-                                                        "outlettype": [ "" ]
+                                                        "outlettype": [ "" ],
+                                                        "id": "obj-69",
+                                                        "numinlets": 2
                                                     }
                                                 },
                                                 {
@@ -4139,10 +4261,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "selector 2",
                                                         "patching_rect": [ 175.33333855867386, 407.33334547281265, 61.0, 22.0 ],
-                                                        "numinlets": 3,
-                                                        "id": "obj-53",
                                                         "numoutlets": 1,
-                                                        "outlettype": [ "" ]
+                                                        "outlettype": [ "" ],
+                                                        "id": "obj-53",
+                                                        "numinlets": 3
                                                     }
                                                 },
                                                 {
@@ -4150,9 +4272,9 @@
                                                         "maxclass": "newobj",
                                                         "text": "out 3 seq_bitreduce",
                                                         "patching_rect": [ 349.33333855867386, 479.0000128149986, 114.0, 22.0 ],
-                                                        "numinlets": 1,
+                                                        "numoutlets": 0,
                                                         "id": "obj-48",
-                                                        "numoutlets": 0
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -4160,10 +4282,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "+ 1",
                                                         "patching_rect": [ 175.33333855867386, 373.3333444595337, 26.0, 22.0 ],
-                                                        "numinlets": 1,
-                                                        "id": "obj-47",
                                                         "numoutlets": 1,
-                                                        "outlettype": [ "" ]
+                                                        "outlettype": [ "" ],
+                                                        "id": "obj-47",
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -4171,10 +4293,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "== 0",
                                                         "patching_rect": [ 168.66667169332504, 338.66667675971985, 33.0, 22.0 ],
-                                                        "numinlets": 1,
-                                                        "id": "obj-45",
                                                         "numoutlets": 1,
-                                                        "outlettype": [ "" ]
+                                                        "outlettype": [ "" ],
+                                                        "id": "obj-45",
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -4182,10 +4304,10 @@
                                                         "maxclass": "comment",
                                                         "text": "are combined",
                                                         "patching_rect": [ 63.33333522081375, 234.00000697374344, 81.0, 20.0 ],
-                                                        "numinlets": 1,
-                                                        "id": "obj-67",
                                                         "numoutlets": 0,
-                                                        "textjustification": 2
+                                                        "textjustification": 2,
+                                                        "id": "obj-67",
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -4193,10 +4315,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "xor",
                                                         "patching_rect": [ 196.66667252779007, 233.33334028720856, 29.5, 22.0 ],
-                                                        "numinlets": 2,
-                                                        "id": "obj-66",
                                                         "numoutlets": 1,
-                                                        "outlettype": [ "" ]
+                                                        "outlettype": [ "" ],
+                                                        "id": "obj-66",
+                                                        "numinlets": 2
                                                     }
                                                 },
                                                 {
@@ -4204,10 +4326,10 @@
                                                         "maxclass": "comment",
                                                         "text": "and overflow bit",
                                                         "patching_rect": [ 82.66666913032532, 200.66667264699936, 93.0, 20.0 ],
-                                                        "numinlets": 1,
-                                                        "id": "obj-64",
                                                         "numoutlets": 0,
-                                                        "textjustification": 2
+                                                        "textjustification": 2,
+                                                        "id": "obj-64",
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -4215,10 +4337,10 @@
                                                         "maxclass": "newobj",
                                                         "text": ">=",
                                                         "patching_rect": [ 207.33333951234818, 199.3333392739296, 29.5, 22.0 ],
-                                                        "numinlets": 2,
-                                                        "id": "obj-65",
                                                         "numoutlets": 1,
-                                                        "outlettype": [ "" ]
+                                                        "outlettype": [ "" ],
+                                                        "id": "obj-65",
+                                                        "numinlets": 2
                                                     }
                                                 },
                                                 {
@@ -4227,9 +4349,9 @@
                                                         "text": "divide by limit to ensure output is between 0 and 1, regardless of pattern length",
                                                         "linecount": 3,
                                                         "patching_rect": [ 18.666667222976685, 430.0000128149986, 155.0, 47.0 ],
-                                                        "numinlets": 1,
+                                                        "numoutlets": 0,
                                                         "id": "obj-59",
-                                                        "numoutlets": 0
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -4237,10 +4359,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "/",
                                                         "patching_rect": [ 175.33333855867386, 442.6666798591614, 29.5, 22.0 ],
-                                                        "numinlets": 2,
-                                                        "id": "obj-62",
                                                         "numoutlets": 1,
-                                                        "outlettype": [ "" ]
+                                                        "outlettype": [ "" ],
+                                                        "id": "obj-62",
+                                                        "numinlets": 2
                                                     }
                                                 },
                                                 {
@@ -4248,9 +4370,9 @@
                                                         "maxclass": "newobj",
                                                         "text": "out 1 seq_0-1",
                                                         "patching_rect": [ 175.33333855867386, 479.0000128149986, 82.0, 22.0 ],
-                                                        "numinlets": 1,
+                                                        "numoutlets": 0,
                                                         "id": "obj-63",
-                                                        "numoutlets": 0
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -4258,9 +4380,9 @@
                                                         "maxclass": "newobj",
                                                         "text": "out 4 trig",
                                                         "patching_rect": [ 584.0000174045563, 338.66667675971985, 55.0, 22.0 ],
-                                                        "numinlets": 1,
+                                                        "numoutlets": 0,
                                                         "id": "obj-22",
-                                                        "numoutlets": 0
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -4268,10 +4390,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "go.ramp2trig",
                                                         "patching_rect": [ 584.0000174045563, 233.33334028720856, 76.0, 22.0 ],
-                                                        "numinlets": 1,
-                                                        "id": "obj-19",
                                                         "numoutlets": 1,
-                                                        "outlettype": [ "" ]
+                                                        "outlettype": [ "" ],
+                                                        "id": "obj-19",
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -4279,9 +4401,9 @@
                                                         "maxclass": "comment",
                                                         "text": "integer limit",
                                                         "patching_rect": [ 290.6666753292084, 165.33333826065063, 70.0, 20.0 ],
-                                                        "numinlets": 1,
+                                                        "numoutlets": 0,
                                                         "id": "obj-20",
-                                                        "numoutlets": 0
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -4289,9 +4411,9 @@
                                                         "maxclass": "comment",
                                                         "text": "loop length (#bits)",
                                                         "patching_rect": [ 287.33334189653397, 130.6666705608368, 104.0, 20.0 ],
-                                                        "numinlets": 1,
+                                                        "numoutlets": 0,
                                                         "id": "obj-24",
-                                                        "numoutlets": 0
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -4299,10 +4421,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "floor",
                                                         "patching_rect": [ 253.333340883255, 129.33333718776703, 32.0, 22.0 ],
-                                                        "numinlets": 1,
-                                                        "id": "obj-25",
                                                         "numoutlets": 1,
-                                                        "outlettype": [ "" ]
+                                                        "outlettype": [ "" ],
+                                                        "id": "obj-25",
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -4310,10 +4432,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "exp2",
                                                         "patching_rect": [ 253.333340883255, 164.66667157411575, 35.0, 22.0 ],
-                                                        "numinlets": 1,
-                                                        "id": "obj-28",
                                                         "numoutlets": 1,
-                                                        "outlettype": [ "" ]
+                                                        "outlettype": [ "" ],
+                                                        "id": "obj-28",
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -4321,10 +4443,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "param length 8 @min 1 @max 8",
                                                         "patching_rect": [ 253.333340883255, 92.66666942834854, 182.0, 22.0 ],
-                                                        "numinlets": 0,
-                                                        "id": "obj-33",
                                                         "numoutlets": 1,
-                                                        "outlettype": [ "" ]
+                                                        "outlettype": [ "" ],
+                                                        "id": "obj-33",
+                                                        "numinlets": 0
                                                     }
                                                 },
                                                 {
@@ -4333,9 +4455,9 @@
                                                         "text": "update on clock trig",
                                                         "linecount": 2,
                                                         "patching_rect": [ 232.66667360067368, 298.00000888109207, 65.0, 33.0 ],
-                                                        "numinlets": 1,
+                                                        "numoutlets": 0,
                                                         "id": "obj-35",
-                                                        "numoutlets": 0
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -4343,9 +4465,9 @@
                                                         "maxclass": "comment",
                                                         "text": "pattern (as integer)",
                                                         "patching_rect": [ 65.3333352804184, 130.6666705608368, 110.0, 20.0 ],
-                                                        "numinlets": 1,
+                                                        "numoutlets": 0,
                                                         "id": "obj-37",
-                                                        "numoutlets": 0
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -4353,9 +4475,9 @@
                                                         "maxclass": "comment",
                                                         "text": "x2 (all steps) ↓",
                                                         "patching_rect": [ 89.33333599567413, 165.33333826065063, 86.0, 20.0 ],
-                                                        "numinlets": 1,
+                                                        "numoutlets": 0,
                                                         "id": "obj-38",
-                                                        "numoutlets": 0
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -4363,10 +4485,10 @@
                                                         "maxclass": "comment",
                                                         "text": "to add 0 or 1 ↓ ",
                                                         "patching_rect": [ 42.66666793823242, 270.00000804662704, 89.0, 20.0 ],
-                                                        "numinlets": 1,
-                                                        "id": "obj-5",
                                                         "numoutlets": 0,
-                                                        "textjustification": 2
+                                                        "textjustification": 2,
+                                                        "id": "obj-5",
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -4375,9 +4497,9 @@
                                                         "text": "→ remove last step ",
                                                         "linecount": 2,
                                                         "patching_rect": [ 306.66667580604553, 228.0000067949295, 67.0, 33.0 ],
-                                                        "numinlets": 1,
+                                                        "numoutlets": 0,
                                                         "id": "obj-40",
-                                                        "numoutlets": 0
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -4385,10 +4507,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "latch",
                                                         "patching_rect": [ 196.66667252779007, 303.3333423733711, 34.0, 22.0 ],
-                                                        "numinlets": 2,
-                                                        "id": "obj-41",
                                                         "numoutlets": 1,
-                                                        "outlettype": [ "" ]
+                                                        "outlettype": [ "" ],
+                                                        "id": "obj-41",
+                                                        "numinlets": 2
                                                     }
                                                 },
                                                 {
@@ -4396,10 +4518,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "history",
                                                         "patching_rect": [ 207.33333951234818, 129.33333718776703, 44.0, 22.0 ],
-                                                        "numinlets": 1,
-                                                        "id": "obj-42",
                                                         "numoutlets": 1,
-                                                        "outlettype": [ "" ]
+                                                        "outlettype": [ "" ],
+                                                        "id": "obj-42",
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -4407,10 +4529,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "* 2",
                                                         "patching_rect": [ 207.33333951234818, 164.66667157411575, 23.0, 22.0 ],
-                                                        "numinlets": 1,
-                                                        "id": "obj-43",
                                                         "numoutlets": 1,
-                                                        "outlettype": [ "" ]
+                                                        "outlettype": [ "" ],
+                                                        "id": "obj-43",
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -4418,10 +4540,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "mod",
                                                         "patching_rect": [ 228.6666734814644, 233.33334028720856, 32.0, 22.0 ],
-                                                        "numinlets": 2,
-                                                        "id": "obj-12",
                                                         "numoutlets": 1,
-                                                        "outlettype": [ "" ]
+                                                        "outlettype": [ "" ],
+                                                        "id": "obj-12",
+                                                        "numinlets": 2
                                                     }
                                                 },
                                                 {
@@ -4429,10 +4551,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "+",
                                                         "patching_rect": [ 196.66667252779007, 268.6666746735573, 29.5, 22.0 ],
-                                                        "numinlets": 2,
-                                                        "id": "obj-44",
                                                         "numoutlets": 1,
-                                                        "outlettype": [ "" ]
+                                                        "outlettype": [ "" ],
+                                                        "id": "obj-44",
+                                                        "numinlets": 2
                                                     }
                                                 },
                                                 {
@@ -4440,10 +4562,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "abs",
                                                         "patching_rect": [ 196.66667252779007, 57.33333504199982, 28.0, 22.0 ],
-                                                        "numinlets": 1,
-                                                        "id": "obj-46",
                                                         "numoutlets": 1,
-                                                        "outlettype": [ "" ]
+                                                        "outlettype": [ "" ],
+                                                        "id": "obj-46",
+                                                        "numinlets": 1
                                                     }
                                                 },
                                                 {
@@ -4451,10 +4573,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "noise",
                                                         "patching_rect": [ 196.66667252779007, 22.666667342185974, 37.0, 22.0 ],
-                                                        "numinlets": 0,
-                                                        "id": "obj-49",
                                                         "numoutlets": 1,
-                                                        "outlettype": [ "" ]
+                                                        "outlettype": [ "" ],
+                                                        "id": "obj-49",
+                                                        "numinlets": 0
                                                     }
                                                 },
                                                 {
@@ -4462,10 +4584,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "<",
                                                         "patching_rect": [ 196.66667252779007, 92.66666942834854, 29.5, 22.0 ],
-                                                        "numinlets": 2,
-                                                        "id": "obj-50",
                                                         "numoutlets": 1,
-                                                        "outlettype": [ "" ]
+                                                        "outlettype": [ "" ],
+                                                        "id": "obj-50",
+                                                        "numinlets": 2
                                                     }
                                                 },
                                                 {
@@ -4473,67 +4595,205 @@
                                                         "maxclass": "newobj",
                                                         "text": "param chance 0.3 @min 0 @max 1",
                                                         "patching_rect": [ 235.3333403468132, 22.666667342185974, 198.0, 22.0 ],
-                                                        "numinlets": 0,
-                                                        "id": "obj-58",
                                                         "numoutlets": 1,
-                                                        "outlettype": [ "" ]
+                                                        "outlettype": [ "" ],
+                                                        "id": "obj-58",
+                                                        "numinlets": 0
                                                     }
                                                 }
                                             ],
                                             "lines": [
                                                 {
                                                     "patchline": {
-                                                        "source": [ "obj-69", 0 ],
-                                                        "destination": [ "obj-1", 1 ],
-                                                        "midpoints": [ 407.5000118613243, 366.8333569765091, 253.3333398103714, 366.8333569765091 ]
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-41", 0 ],
-                                                        "destination": [ "obj-1", 0 ],
-                                                        "order": 0
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-1", 0 ],
-                                                        "destination": [ "obj-53", 2 ]
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-12", 0 ],
-                                                        "destination": [ "obj-44", 1 ]
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-19", 0 ],
-                                                        "destination": [ "obj-41", 1 ],
-                                                        "midpoints": [ 593.5000174045563, 296.5755444765091, 221.16667252779007, 296.5755444765091 ],
-                                                        "order": 2
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-19", 0 ],
-                                                        "destination": [ "obj-69", 1 ],
-                                                        "midpoints": [ 593.5000174045563, 296.83335596323013, 422.5000118613243, 296.83335596323013 ],
+                                                        "source": [ "obj-33", 0 ],
+                                                        "destination": [ "obj-25", 0 ],
                                                         "order": 1
                                                     }
                                                 },
                                                 {
                                                     "patchline": {
-                                                        "source": [ "obj-25", 0 ],
-                                                        "destination": [ "obj-28", 0 ]
+                                                        "source": [ "obj-33", 0 ],
+                                                        "destination": [ "obj-1", 2 ],
+                                                        "midpoints": [ 262.833340883255, 121.73439853591844, 391.6666876077652, 121.73439853591844, 391.6666876077652, 353.3333569765091, 279.8333398103714, 353.3333569765091 ],
+                                                        "order": 0
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-70", 0 ],
+                                                        "destination": [ "obj-71", 0 ]
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-4", 0 ],
+                                                        "destination": [ "obj-8", 1 ]
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-19", 0 ],
+                                                        "destination": [ "obj-22", 0 ],
+                                                        "order": 0
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-8", 0 ],
+                                                        "destination": [ "obj-48", 0 ]
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-53", 0 ],
+                                                        "destination": [ "obj-2", 0 ],
+                                                        "midpoints": [ 184.83333855867386, 436.33594944584183, 268.83333855867386, 436.33594944584183 ],
+                                                        "order": 1
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-62", 0 ],
+                                                        "destination": [ "obj-63", 0 ]
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-53", 0 ],
+                                                        "destination": [ "obj-8", 0 ],
+                                                        "midpoints": [ 184.83333855867386, 436.000012665987, 358.83333855867386, 436.000012665987 ],
+                                                        "order": 0
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-3", 0 ],
+                                                        "destination": [ "obj-19", 0 ]
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-75", 0 ],
+                                                        "destination": [ "obj-69", 0 ]
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-71", 0 ],
+                                                        "destination": [ "obj-75", 0 ]
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-66", 0 ],
+                                                        "destination": [ "obj-44", 0 ]
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-65", 0 ],
+                                                        "destination": [ "obj-66", 1 ]
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-58", 0 ],
+                                                        "destination": [ "obj-50", 1 ],
+                                                        "order": 0
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-58", 0 ],
+                                                        "destination": [ "obj-45", 0 ],
+                                                        "midpoints": [ 244.8333403468132, 52.670857310295105, 178.16667169332504, 52.670857310295105 ],
+                                                        "order": 1
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-53", 0 ],
+                                                        "destination": [ "obj-62", 0 ],
+                                                        "order": 2
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-50", 0 ],
+                                                        "destination": [ "obj-66", 0 ]
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-49", 0 ],
+                                                        "destination": [ "obj-46", 0 ]
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-47", 0 ],
+                                                        "destination": [ "obj-53", 0 ]
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-46", 0 ],
+                                                        "destination": [ "obj-50", 0 ]
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-45", 0 ],
+                                                        "destination": [ "obj-47", 0 ]
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-44", 0 ],
+                                                        "destination": [ "obj-41", 0 ]
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-43", 0 ],
+                                                        "destination": [ "obj-65", 0 ],
+                                                        "order": 1
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-43", 0 ],
+                                                        "destination": [ "obj-12", 0 ],
+                                                        "midpoints": [ 216.83333951234818, 191.0833569765091, 238.1666734814644, 191.0833569765091 ],
+                                                        "order": 0
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-42", 0 ],
+                                                        "destination": [ "obj-43", 0 ]
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-41", 0 ],
+                                                        "destination": [ "obj-53", 1 ],
+                                                        "order": 2
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-41", 0 ],
+                                                        "destination": [ "obj-42", 0 ],
+                                                        "midpoints": [ 206.16667252779007, 331.4075757265091, 187.4166876077652, 331.4075757265091, 187.4166876077652, 121.7982007265091, 216.83333951234818, 121.7982007265091 ],
+                                                        "order": 1
                                                     }
                                                 },
                                                 {
                                                     "patchline": {
                                                         "source": [ "obj-28", 0 ],
-                                                        "destination": [ "obj-12", 1 ],
-                                                        "order": 0
+                                                        "destination": [ "obj-65", 1 ],
+                                                        "order": 1
                                                     }
                                                 },
                                                 {
@@ -4547,194 +4807,56 @@
                                                 {
                                                     "patchline": {
                                                         "source": [ "obj-28", 0 ],
-                                                        "destination": [ "obj-65", 1 ],
-                                                        "order": 1
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-41", 0 ],
-                                                        "destination": [ "obj-42", 0 ],
-                                                        "midpoints": [ 206.16667252779007, 331.4075757265091, 187.4166876077652, 331.4075757265091, 187.4166876077652, 121.7982007265091, 216.83333951234818, 121.7982007265091 ],
-                                                        "order": 1
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-41", 0 ],
-                                                        "destination": [ "obj-53", 1 ],
-                                                        "order": 2
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-42", 0 ],
-                                                        "destination": [ "obj-43", 0 ]
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-43", 0 ],
-                                                        "destination": [ "obj-12", 0 ],
-                                                        "midpoints": [ 216.83333951234818, 191.0833569765091, 238.1666734814644, 191.0833569765091 ],
+                                                        "destination": [ "obj-12", 1 ],
                                                         "order": 0
                                                     }
                                                 },
                                                 {
                                                     "patchline": {
-                                                        "source": [ "obj-43", 0 ],
-                                                        "destination": [ "obj-65", 0 ],
-                                                        "order": 1
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-44", 0 ],
-                                                        "destination": [ "obj-41", 0 ]
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-45", 0 ],
-                                                        "destination": [ "obj-47", 0 ]
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-46", 0 ],
-                                                        "destination": [ "obj-50", 0 ]
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-47", 0 ],
-                                                        "destination": [ "obj-53", 0 ]
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-49", 0 ],
-                                                        "destination": [ "obj-46", 0 ]
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-50", 0 ],
-                                                        "destination": [ "obj-66", 0 ]
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-53", 0 ],
-                                                        "destination": [ "obj-62", 0 ],
-                                                        "order": 2
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-58", 0 ],
-                                                        "destination": [ "obj-45", 0 ],
-                                                        "midpoints": [ 244.8333403468132, 52.670857310295105, 178.16667169332504, 52.670857310295105 ],
-                                                        "order": 1
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-58", 0 ],
-                                                        "destination": [ "obj-50", 1 ],
-                                                        "order": 0
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-65", 0 ],
-                                                        "destination": [ "obj-66", 1 ]
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-66", 0 ],
-                                                        "destination": [ "obj-44", 0 ]
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-71", 0 ],
-                                                        "destination": [ "obj-75", 0 ]
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-75", 0 ],
-                                                        "destination": [ "obj-69", 0 ]
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-3", 0 ],
-                                                        "destination": [ "obj-19", 0 ]
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-53", 0 ],
-                                                        "destination": [ "obj-8", 0 ],
-                                                        "midpoints": [ 184.83333855867386, 436.000012665987, 358.83333855867386, 436.000012665987 ],
-                                                        "order": 0
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-62", 0 ],
-                                                        "destination": [ "obj-63", 0 ]
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-53", 0 ],
-                                                        "destination": [ "obj-2", 0 ],
-                                                        "midpoints": [ 184.83333855867386, 436.33594944584183, 268.83333855867386, 436.33594944584183 ],
-                                                        "order": 1
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-8", 0 ],
-                                                        "destination": [ "obj-48", 0 ]
+                                                        "source": [ "obj-25", 0 ],
+                                                        "destination": [ "obj-28", 0 ]
                                                     }
                                                 },
                                                 {
                                                     "patchline": {
                                                         "source": [ "obj-19", 0 ],
-                                                        "destination": [ "obj-22", 0 ],
-                                                        "order": 0
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-4", 0 ],
-                                                        "destination": [ "obj-8", 1 ]
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-70", 0 ],
-                                                        "destination": [ "obj-71", 0 ]
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-33", 0 ],
-                                                        "destination": [ "obj-1", 2 ],
-                                                        "midpoints": [ 262.833340883255, 121.73439853591844, 391.6666876077652, 121.73439853591844, 391.6666876077652, 353.3333569765091, 279.8333398103714, 353.3333569765091 ],
-                                                        "order": 0
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-33", 0 ],
-                                                        "destination": [ "obj-25", 0 ],
+                                                        "destination": [ "obj-69", 1 ],
+                                                        "midpoints": [ 593.5000174045563, 296.83335596323013, 422.5000118613243, 296.83335596323013 ],
                                                         "order": 1
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-19", 0 ],
+                                                        "destination": [ "obj-41", 1 ],
+                                                        "midpoints": [ 593.5000174045563, 296.5755444765091, 221.16667252779007, 296.5755444765091 ],
+                                                        "order": 2
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-12", 0 ],
+                                                        "destination": [ "obj-44", 1 ]
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-1", 0 ],
+                                                        "destination": [ "obj-53", 2 ]
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-41", 0 ],
+                                                        "destination": [ "obj-1", 0 ],
+                                                        "order": 0
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-69", 0 ],
+                                                        "destination": [ "obj-1", 1 ],
+                                                        "midpoints": [ 407.5000118613243, 366.8333569765091, 253.3333398103714, 366.8333569765091 ]
                                                     }
                                                 }
                                             ]
@@ -5127,38 +5249,8 @@
                     },
                     "patching_rect": [ 21.0, 160.0, 154.0, 22.0 ],
                     "rnboattrcache": {
-                        "env.lpg/res": {
-                            "label": "res",
-                            "isEnum": 0,
-                            "parsestring": "",
-                            "type": 0
-                        },
-                        "env.lpg/offset": {
-                            "label": "offset",
-                            "isEnum": 0,
-                            "parsestring": "",
-                            "type": 0
-                        },
-                        "env.lpg/vca_ness": {
-                            "label": "vca_ness",
-                            "isEnum": 0,
-                            "parsestring": "",
-                            "type": 0
-                        },
-                        "bitshiftseq/length": {
-                            "label": "bitshiftseq/length",
-                            "isEnum": 0,
-                            "parsestring": "",
-                            "type": 0
-                        },
                         "length": {
                             "label": "length",
-                            "isEnum": 0,
-                            "parsestring": "",
-                            "type": 0
-                        },
-                        "bitshiftseq/bit_depth": {
-                            "label": "bitshiftseq/bit_depth",
                             "isEnum": 0,
                             "parsestring": "",
                             "type": 0
@@ -5169,8 +5261,38 @@
                             "parsestring": "",
                             "type": 0
                         },
+                        "env.lpg/res": {
+                            "label": "res",
+                            "isEnum": 0,
+                            "parsestring": "",
+                            "type": 0
+                        },
+                        "bitshiftseq/length": {
+                            "label": "bitshiftseq/length",
+                            "isEnum": 0,
+                            "parsestring": "",
+                            "type": 0
+                        },
+                        "env.lpg/offset": {
+                            "label": "offset",
+                            "isEnum": 0,
+                            "parsestring": "",
+                            "type": 0
+                        },
                         "bitshiftseq/chance": {
                             "label": "bitshiftseq/chance",
+                            "isEnum": 0,
+                            "parsestring": "",
+                            "type": 0
+                        },
+                        "bitshiftseq/bit_depth": {
+                            "label": "bitshiftseq/bit_depth",
+                            "isEnum": 0,
+                            "parsestring": "",
+                            "type": 0
+                        },
+                        "env.lpg/vca_ness": {
+                            "label": "vca_ness",
                             "isEnum": 0,
                             "parsestring": "",
                             "type": 0
@@ -5405,6 +5527,20 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-17", 0 ],
+                    "hidden": 1,
+                    "source": [ "obj-16", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-32", 0 ],
+                    "hidden": 1,
+                    "source": [ "obj-17", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-13", 0 ],
                     "source": [ "obj-18", 0 ]
                 }
@@ -5414,6 +5550,13 @@
                     "destination": [ "obj-21", 0 ],
                     "hidden": 1,
                     "source": [ "obj-2", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-16", 0 ],
+                    "hidden": 1,
+                    "source": [ "obj-28", 0 ]
                 }
             },
             {
@@ -5428,6 +5571,7 @@
             "obj-11": [ "bitshiftseq/bit_depth", "bit depth", 0 ],
             "obj-13": [ "live.gain~", "live.gain~", 0 ],
             "obj-18": [ "rnbo~[1]", "rnbo~[1]", 0 ],
+            "obj-28": [ "live.text[2]", "live.text", 0 ],
             "obj-3": [ "tempo", "tempo", 0 ],
             "obj-33": [ "p_obj-21/key", "p_obj-21/key", 0 ],
             "obj-39": [ "transpose", "transpose", 0 ],
